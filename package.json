@@ -1,0 +1,23 @@
+{
+  "name": "timer",
+  "version": "1.0.0",
+  "description": "Timer avec animations en pixel art",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Winnie-WTP/Timer.git"
+  },
+  "author": "Winnie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Winnie-WTP/Timer/issues"
+  },
+  "homepage": "https://github.com/Winnie-WTP/Timer#readme",
+  "devDependencies": {
+    "electron": "^36.2.0"
+  }
+}

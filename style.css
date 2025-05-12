@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'Pixelify Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(./PixelifySans-VariableFont_wght.ttf) format('woff');
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text-node {
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+}
+
+/* Index */
+.index {
+    position: relative;
+    width: 444px;
+    height: 600px;
+    background: #d67272FF;
+    border-radius: 22px 22px 22px 22px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Header */
+.header-2cae70ec6707 {
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    width: 414px;
+    height: 53px;
+    background: #e15353FF;
+    border-radius: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+
+/* close */
+.close-2cafbd4dc616 {
+    position: absolute;
+    left: 365px;
+    top: 2px;
+    width: 49px;
+    height: 49px;
+    background: url(assets/background/close.png) no-repeat center center / cover;
+    border-radius: 0px 0px 0px 0px;
+}
+
+/* close */
+.shrink-2cafa36e3f1d {
+    position: absolute;
+    left: 298px;
+    top: 2px;
+    width: 49px;
+    height: 49px;
+    background: url(assets/background/shrink.png) no-repeat center center / cover;
+    border-radius: 0px 0px 0px 0px;
+}
+
+/* Timer */
+.timer-2cae8bf36c76 {
+    position: absolute;
+    left: 7px;
+    top: 8.5px;
+    width: 139px;
+    height: 36px;
+}
+
+.timer-2cae8bf36c76 .root-0 {
+
+
+    display: flex;
+    white-space: break-spaces;
+    align-items: center;
+}
+
+.timer-2cae8bf36c76 .root-0-paragraph-set-0 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: inherit;
+    min-width: 100%;
+    margin-right: 1px;
+    vertical-align: top;
+}
+
+.timer-2cae8bf36c76 .root-0-paragraph-set-0-paragraph-0 {
+    font-size: 0;
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+}
+
+.timer-2cae8bf36c76 .root-0-paragraph-set-0-paragraph-0-text-0 {
+    color: rgba(0, 0, 0, 1);
+    text-transform: none;
+
+    line-break: auto;
+    overflow-wrap: initial;
+    white-space: break-spaces;
+    font-size: 40px;
+    text-rendering: geometricPrecision;
+    caret-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-family: "Pixelify Sans";
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Body */
+.body {
+    position: absolute;
+    left: 15px;
+    top: 137px;
+    width: 414px;
+    height: 443px;
+    background: #e04a4aFF;
+    border-radius: 0px 0px 0px 0px;
+    overflow: hidden;
+}
+
+/* start-btn */
+.startbtn-2cb6e9a5221a {
+    position: absolute;
+    left: 57px;
+    top: 222px;
+    width: 300px;
+    height: 150px;
+    background: url(assets/background/start-btn.png) no-repeat center center / cover;
+    border-radius: 0px 0px 0px 0px;
+}
+
+/* Au travail ! */
+.au-travail {
+    position: absolute;
+    left: 57px;
+    top: 25px;
+    width: 300px;
+    height: 47px;
+}
+
+.au-travail .root-0 {
+
+
+    display: flex;
+    white-space: break-spaces;
+    align-items: flex-start;
+}
+
+.au-travail .root-0-paragraph-set-0 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: inherit;
+    min-width: 100%;
+    margin-right: 1px;
+    vertical-align: top;
+}
+
+.au-travail .root-0-paragraph-set-0-paragraph-0 {
+    font-size: 0;
+    line-height: 1.2;
+    margin: 0;
+    text-align: center;
+}
+
+.au-travail .root-0-paragraph-set-0-paragraph-0-text-0 {
+    color: rgba(0, 0, 0, 1);
+    text-transform: unset;
+
+    line-break: auto;
+    overflow-wrap: initial;
+    white-space: break-spaces;
+    font-size: 42px;
+    text-rendering: geometricPrecision;
+    caret-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-family: "Pixelify Sans";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.au-travail .root-0-paragraph-set-0-paragraph-0-text-0 {
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+#close-btn,
+#shrink-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Draggable Header (excludes the buttons) */
+#draggable-header {
+    -webkit-app-region: drag;
+}
+
+/* Make sure buttons (close and minimize) are not part of the draggable region */
+#draggable-header .close-2cafbd4dc616,
+#draggable-header .shrink-2cafa36e3f1d {
+    -webkit-app-region: no-drag;
+}
+
+/* Ensure text is non-selectable */
+#draggable-header .text {
+    -webkit-app-region: no-drag;
+    user-select: none;
+    /* Prevent text selection */
+}
+
+/* Style buttons */
+#draggable-header .close-2cafbd4dc616 {
+    background: url(assets/background/close.png) no-repeat center center / cover;
+    width: 49px;
+    height: 49px;
+    cursor: pointer;
+}
+
+#draggable-header .shrink-2cafa36e3f1d {
+    background: url(assets/background/shrink.png) no-repeat center center / cover;
+    width: 49px;
+    height: 49px;
+    cursor: pointer;
+}
+
+* {
+    user-select: none;
+    /* Disable selection on all elements */
+    -webkit-user-select: none;
+    /* For webkit browsers (including Electron) */
+}
